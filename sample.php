@@ -3,12 +3,12 @@
 $a = 'test';
 $b = '‚Å‚·';
 
-$a = out($a).$b; 
+$a = out($a,$b); 
 var_dump($a);
 
-function out($hoge) {
+function out($hoge,$fuga) {
     $hoge = 'OK';
-    return $hoge;
+    return $hoge.$fuga;
 }
 
 ?>
