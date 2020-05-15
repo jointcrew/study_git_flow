@@ -1,10 +1,10 @@
 <?php
+  
+$noun = 'test';
+$auxiliaryVerb = '‚Å‚·';
 
-$a = 'test';
-$b = '‚Å‚·';
-
-$a = out($a).$b; 
-var_dump($a);
+$noun = out($noun).$auxiliaryVerb;
+var_dump($noun);
 
 function out($hoge) {
     $hoge = 'OK';
