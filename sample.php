@@ -1,12 +1,12 @@
 <?php
+  
+$noun = 'test';
+$auxiliaryVerb = 'ã§ã™';
 
-$a = 'test';
-$b = '‚Å‚·';
+$noun = out($noun, $auxiliaryVerb); 
+var_dump($noun);
 
-$a = out($a,$b); 
-var_dump($a);
-
-function out($hoge,$fuga) {
+function out($hoge, $fuga) {
     $hoge = 'OK';
     return $hoge.$fuga;
 }
